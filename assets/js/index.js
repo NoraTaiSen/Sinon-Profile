@@ -131,7 +131,7 @@
     }
   }
   function y() {
-    $.ajax({url: "https://api.thanhdieu.com/cham-ngon", type: "get", dataType: "json", success: function (n) {
+    $.ajax({url: "http://thor.pylex.software:10435/cham-ngon", type: "get", dataType: "json", success: function (n) {
       $("#cham-ngon").fadeOut(300, function () {
         $(this).text(n.msg).fadeIn(300);
       });
